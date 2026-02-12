@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Valentine's Day for Sandra</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Password Page -->
+    <div id="password-page">
+        <div id="password-message" class="cursive">
+            Only the most special heart can enter ❤️
+        </div>
+
+        <input type="password" id="password-input" placeholder="Enter the name of my love">
+        <div id="hint">Hint: It's the name of the most beautiful girl in my life ❤️</div>
+
+        <!-- Floating Hearts -->
+        <div class="heart" style="left: 10%; animation-delay: 0s;">❤️</div>
+        <div class="heart" style="left: 20%; animation-delay: 1s;">💖</div>
+        <div class="heart" style="left: 30%; animation-delay: 2s;">❤️</div>
+        <div class="heart" style="left: 40%; animation-delay: 3s;">💖</div>
+        <div class="heart" style="left: 50%; animation-delay: 4s;">❤️</div>
+        <div class="heart" style="left: 60%; animation-delay: 5s;">💖</div>
+        <div class="heart" style="left: 70%; animation-delay: 6s;">❤️</div>
+        <div class="heart" style="left: 80%; animation-delay: 7s;">💖</div>
+        <div class="heart" style="left: 90%; animation-delay: 8s;">❤️</div>
+    </div>
+
+    <!-- Main Website -->
+    <div id="main-site">
+
+        <section id="hero">
+            <h1 class="cursive">To My Beautiful Sandra ❤️</h1>
+            <p>Every heartbeat whispers your name. Every moment feels magical because you are in my life.</p>
+        </section>
+
+        <section id="special">
+            <h2 class="cursive">Why You Are Special</h2>
+            <p>
+                Sandra, you are my peace, my happiness, and my forever.
+                Your smile lights up my darkest days, and your love gives my life meaning.
+            </p>
+        </section>
+
+        <section id="letter">
+            <h2 class="cursive">A Message From Andrew</h2>
+            <div class="letter">
+                <p>
+                    My love Sandra,<br><br>
+                    From the moment you walked into my life, everything changed.
+                    You are my greatest blessing and my sweetest dream.
+                    I promise to always stand by your side, love you deeply,
+                    and cherish every second with you.<br><br>
+                    Forever yours,<br>
+                    Andrew ❤️
+                </p>
+            </div>
+        </section>
+
+        <footer>
+            <p>Made with love by Andrew for Sandra – Valentine's Day 2026</p>
+        </footer>
+
+    </div>
+
+    <!-- JS File -->
+    <script src="js/main.js"></script>
+</body>
+</html>
