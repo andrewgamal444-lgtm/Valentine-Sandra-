@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day for Sandra</title>
+    <style>
+        /* Global Styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif; /* Modern clean font for text */
+            overflow-x: hidden;
+            background: linear-gradient(135deg, #800020, #8B0000, #DC143C); /* Dark red gradient */
+            color: #FFD700; /* Soft gold */
+            transition: all 1s ease;
+        }
+
+        /* Cursive font for titles */
+        .cursive {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5em;
+        }
+
+        /* Password Page */
+        #password-page {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #800020, #8B0000, #DC143C);
+            z-index: 10;
+            opacity: 1;
+            transition: opacity 1s ease;
+        }
+
+        #password-page.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        #password-message {
+            font-size: 2em;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #FFD700;
+        }
+
+        #password-input {
+            padding: 10px;
+            font-size: 1.2em;
+            border: 2px solid #FFD700;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #FFD700;
+            text-align: center;
+            width: 250px;
+        }
+
+        #hint {
+            margin-top: 10px;
+            font-size: 1em;
+            color: #FFD700;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        #hint.show {
+            opacity: 1;
+        }
+
+        /* Floating Hearts */
+        .heart {
+            position: absolute;
+            font-size: 2em;
+            color: #FFD700;
+            animation: float 6s infinite ease-in-out;
+            pointer-events: none;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); opacity: 0.5; }
+            50% { transform: translateY(-100px) rotate(180deg); opacity: 1; }
+        }
+
+        /* Main Website */
+        #main-site {
+            opacity: 0;
+            transition: opacity 1s ease;
+        }
+
+        #main-site.show {
+            opacity: 1;
+        }
+
+        section {
+            padding: 50px 20px;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1, h2 {
+            color: #FFD700;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #FFD700;
+        }
+
+        .letter {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        footer {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            text-align: center;
+            color: #FFD700;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .cursive {
+                font-size: 2em;
+            }
+            #password-input {
+                width: 200px;
+            }
+            section {
+                padding: 30px 10px;
+            }
+        }
+
+        /* Smooth Animations */
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Password Page -->
+    <div id="password-page">
+        <div id="password-message" class="cursive">Only the most special heart can enter ❤️</div>
+        <input type="password" id="password-input" placeholder="Enter the name of my love">
+        <div id="hint">Hint: It's the name of the most beautiful girl in my life ❤️</div>
+        <!-- Floating Hearts -->
+        <div class="heart" style="left: 10%; animation-delay: 0s;">❤️</div>
+        <div class="heart" style="left: 20%; animation-delay: 1s;">💖</div>
+        <div class="heart" style="left: 30%; animation-delay: 2s;">❤️</div>
+        <div class="heart" style="left: 40%; animation-delay: 3s;">💖</div>
+        <div class="heart" style="left: 50%; animation-delay: 4s;">❤️</div>
+        <div class="heart" style="left: 60%; animation-delay: 5s;">💖</div>
+        <div class="heart" style="left: 70%; animation-delay: 6s;">❤️</div>
+        <div class="heart" style="left: 80%; animation-delay: 7s;">💖</div>
+        <div class="heart" style="left: 90%; animation-delay: 8s;">❤️</div>
+    </div>
+
+    <!-- Main Website -->
+    <div id="main-site">
+        <!-- Hero Section -->
+        <section id="hero">
+            <h1 class="cursive">To My Beautiful Sandra ❤️</h1>
+            <p>Every heartbeat whispers your name. Every moment feels magical because you are in my life.</p>
+        </section>
+
+        <!-- Why You Are Special Section -->
+        <section id="special">
+            <h2 class="cursive">Why You Are Special</h2>
+            <p>Sandra, you are my peace, my happiness, and my forever. Your smile lights up my darkest days, and your love gives my life meaning.</p>
+        </section>
+
+        <!-- Love Letter Section -->
+        <section id="letter">
+            <h2 class="cursive">A Message From Andrew</h2>
+            <div class="letter">
+                <p>My love Sandra,<br><br>
+                From the moment you walked into my life, everything changed. You are my greatest blessing and my sweetest dream. I promise to always stand by your side, love you deeply, and cherish every second with you.<br><br>
+                Forever yours,<br>
+                Andrew ❤️</p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>Made with love by Andrew for Sandra – Valentine's Day 2026</p>
+        </footer>
+    </div>
+
+    <script>
+        const passwordPage = document.getElementById('password-page');
+        const mainSite = document.getElementById('main-site');
+        const passwordInput = document.getElementById('password-input');
+        const hint = document.getElementById('hint');
+
+        passwordInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                if (passwordInput.value.toLowerCase() === 'sandra') {
+                    passwordPage.classList.add('hidden');
+                    mainSite.classList.add('show');
+                } else {
+                    hint.classList.add('show');
+                    setTimeout(() => hint.classList.remove('show'), 3000);
+                }
+            }
+        });
+    </script>
+</body>
+</html>
